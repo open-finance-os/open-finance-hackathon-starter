@@ -1,0 +1,128 @@
+# ===================================
+# ADCB & Nebras Hackathon .gitignore
+# ===================================
+
+# -----------------------------
+# Environment Variables - NEVER COMMIT!
+# -----------------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------------
+# TPP Certificates - CRITICAL SECURITY
+# -----------------------------
+certs/*
+!certs/README.md
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# -----------------------------
+# Dependencies
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------
+# Build Outputs
+# -----------------------------
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+*.tsbuildinfo
+
+# -----------------------------
+# IDE & Editor Files
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -----------------------------
+# Testing
+# -----------------------------
+coverage/
+*.lcov
+.nyc_output
+test-results/
+jest-results/
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# Temporary Files
+# -----------------------------
+tmp/
+temp/
+*.tmp
+*.temp
+
+# -----------------------------
+# Hackathon Specific
+# -----------------------------
+submission/
+*.zip
+*.tar.gz
+presentation/*.pptx
+presentation/*.key
+video/*.mp4
+video/*.mov
+
+# -----------------------------
+# Security - Double Protection
+# -----------------------------
+*_private*
+*_secret*
+credentials.json
+auth.json
